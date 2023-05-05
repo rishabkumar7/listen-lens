@@ -1,0 +1,155 @@
+/* styles.css */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-button {
+  background: linear-gradient(90deg, #1db954 0%, #1db954 50%, #1ed760 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-size: 200% 100%;
+}
+
+.login-button:hover {
+  background-position: -100% 0;
+}
+
+.top-artists {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.top-artists h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.top-artists ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-artists li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.top-artists img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.top-artists span {
+  position: absolute;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer a {
+  color: #1db954;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  color: #1ed760;
+}
+
+.top-artists li:hover span {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .top-artists li {
+    width: 100px;
+    height: 100px;
+  }
+
+  .top-artists img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .top-artists span {
+    font-size: 14px;
+  }
+}
+
+.top-artists {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.top-artists h2 {
+  margin-bottom: 20px;
+}
