@@ -46,7 +46,7 @@ function Home({ api }) {
         </button>
       )}
 
-      {api && (
+{api && (
         <div className="top-artists">
           <h2>Your Top Artists</h2>
           <ul>
