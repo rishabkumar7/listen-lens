@@ -57,8 +57,13 @@ function Home({ api }) {
                   transform: `scale(${getScaleFactor(index, topArtists.length)})`,
                 }}
               >
-                <img src={artist.images[0].url} alt={artist.name} />
-                <span>{artist.name}</span>
+                <span
+                  style={{
+                    fontSize: `${16 + (topArtists.length - index) * 2}px`,
+                  }}
+                >
+                  {artist.name}
+                </span>
               </li>
             ))}
           </ul>
