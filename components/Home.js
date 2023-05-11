@@ -37,7 +37,7 @@ function Home({ api }) {
 
   return (
     <div className="home">
-      <h1 className="heading">Spotify Analyzer</h1>
+      <h1 className="heading">ListenLens</h1>
       {!api && (
         <button className="login-button" onClick={login}>
           <FontAwesomeIcon icon={faSpotify} />
