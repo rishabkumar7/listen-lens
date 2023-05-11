@@ -1,4 +1,4 @@
-# Spotify Analyzer
+# ListenLens
 
 A React and Next.js web application that connects with your Spotify account to display your most listened artists, with a visually appealing design inspired by Vercel's homepage.
 
